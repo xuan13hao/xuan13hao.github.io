@@ -39,7 +39,7 @@
 
 - title: "SNAIL: Software NAmed entity Identification from Literature"
   authors: "Hao Xuan, Rithvij Pasupuleti, Jun Zhang, Zijun Yao, Cuncong Zhong"
-  venue: "BMC Bioinformatics (Revising)"
+  venue: "Revising"
   year: 2026
   # type: "journal"
   # selected: true
@@ -52,7 +52,7 @@
 
 - title: "Gut metagenomic K-mer signature outperforms Akkermansia muciniphila and taxonomy for predicting immunotherapy response in non-small cell lung cancer"
   authors: "Hao Xuan, Ben Liu, Cuncong Zhong, Jun Zhang"
-  venue: "Cell Reports (Revising)"
+  venue: "Revising"
   year: 2026
   # type: "journal"
   selected: false
