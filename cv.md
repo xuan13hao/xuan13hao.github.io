@@ -5,8 +5,6 @@ permalink: /cv/
 ---
 
 <div class="cv-page">
-  <h1>Selected Conference and Journal Review</h1>
-  
   <div class="reviews-list">
     {% for review in site.data.reviews %}
     <div class="review-item">
