@@ -1,0 +1,64 @@
+- title: "VAT: General and Extensible Algorithmic Framework for Biological Sequence Alignment"
+  featured: true
+  description: "A general and extensible algorithmic framework to biological sequence alignment across scales and applications, enabling efficient alignment from k-mer to full genome scales."
+  highlights:
+    - "Multi-scale alignment framework"
+    - "Extensible architecture for various biological applications"
+    - "Patent pending"
+  links:
+    paper: "https://doi.org/10.64898/2026.01.28.702355"
+    code: ""
+    demo: ""
+  image: ""
+
+- title: "SNAIL: Software Named Entity Identification from Literature"
+  featured: true
+  description: "A system for automated identification and extraction of software names and related entities from scientific literature, enabling large-scale software discovery and citation analysis."
+  highlights:
+    - "Named entity recognition for software in biomedical literature"
+    - "Automated citation generation"
+    - "Patent pending"
+  links:
+    paper: ""
+    code: ""
+    demo: ""
+  image: ""
+
+- title: "Microbiome + Immunotherapy Embedding for NSCLC Response Prediction"
+  featured: true
+  description: "Gut metagenomic k-mer signature-based approach that outperforms traditional taxonomy-based methods for predicting immunotherapy response in non-small cell lung cancer patients."
+  highlights:
+    - "K-mer signature-based prediction"
+    - "Outperforms taxonomy-based methods"
+    - "Clinical application potential"
+  links:
+    paper: ""
+    code: ""
+    demo: ""
+  image: ""
+
+- title: "scVAT: Single-Cell RNA-Sequencing Analysis Pipeline"
+  featured: false
+  description: "An nf-core compatible single-cell RNA-sequencing analysis pipeline for comprehensive scRNA-seq data processing and analysis."
+  highlights:
+    - "nf-core compatible"
+    - "Comprehensive scRNA-seq analysis"
+    - "Work in progress"
+  links:
+    paper: ""
+    code: ""
+    demo: ""
+  image: ""
+
+- title: "Multi-Agent Clinical Intelligence System"
+  featured: false
+  description: "Leveraging Model Context Protocol for evidence-based drug discovery through multi-agent reasoning systems."
+  highlights:
+    - "Multi-agent reasoning"
+    - "Evidence-based drug discovery"
+    - "Model Context Protocol integration"
+  links:
+    paper: ""
+    code: ""
+    demo: ""
+  image: ""

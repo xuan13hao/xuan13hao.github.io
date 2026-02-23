@@ -1,0 +1,36 @@
+name: "Hao Xuan"
+title: "AI Researcher"
+affiliation: "University of Kansas"
+department: "Electrical Engineering and Computer Science"
+location: "Lawrence, KS"
+email: "xuan13hao@gmail.com"
+phone: "+1 (785)-979-4578"
+github: "https://github.com/xuan13hao"
+scholar: ""
+orcid: ""
+twitter: ""
+linkedin: ""
+cv_pdf: "/assets/cv.pdf"
+
+bio: |
+  AI Researcher with 5+ years of experience developing scalable machine learning frameworks for modeling complex scientific data in biomedical and clinical domains. Research focuses on representation learning from high-dimensional biological sequences and literature through algorithmic approaches including large language models, transformer-based architectures, and multi-agent reasoning systems.
+
+interests:
+  - "Biological sequence alignment"
+  - "K-mer methods"
+  - "Microbiome analysis"
+  - "Biomedical NLP"
+  - "Large language models"
+  - "Multi-agent reasoning systems"
+
+education:
+  - degree: "Doctor of Computer Science"
+    institution: "University of Kansas"
+    year: "Expected May 2026"
+    advisor: "Dr. Cuncong Zhong"
+  - degree: "Master of Computer Science"
+    institution: "Capital Normal University"
+    year: "June 2018"
+  - degree: "Bachelor of Computer Science and Technology"
+    institution: "Yantai University"
+    year: "June 2014"

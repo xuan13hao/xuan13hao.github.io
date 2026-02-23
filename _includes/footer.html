@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.data.profile.name }}. All rights reserved.</p>
+      <p class="last-updated">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
+    </div>
+    
+    <div class="footer-links">
+      {% if site.data.profile.email %}
+      <a href="mailto:{{ site.data.profile.email }}" aria-label="Email">Email</a>
+      {% endif %}
+      {% if site.data.profile.github %}
+      <a href="{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+      {% endif %}
+      {% if site.data.profile.scholar %}
+      <a href="{{ site.data.profile.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">Scholar</a>
+      {% endif %}
+      {% if site.data.profile.twitter %}
+      <a href="{{ site.data.profile.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+      {% endif %}
+      {% if site.data.profile.linkedin %}
+      <a href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>

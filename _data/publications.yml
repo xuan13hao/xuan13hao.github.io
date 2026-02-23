@@ -1,0 +1,87 @@
+- title: "A general and extensible algorithmic framework to biological sequence alignment across scales and applications"
+  authors: "Hao Xuan, Hongyang Sun, Xiangtao Liu, Hanyuan Zhang, Jun Zhang, Cuncong Zhong"
+  venue: "bioRxiv"
+  year: 2026
+  type: "preprint"
+  selected: true
+  doi: "https://doi.org/10.64898/2026.01.28.702355"
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Neonatal gut microbiota succession in mice mapped by maturation, site, injury, and single immunoglobulin interleukin-1 related receptor genotype"
+  authors: "Hao Xuan, Shahid Umar, Wenhao Yu, Imran Ahmed, Cuncong Zhong, Michael Morowitz, Venkatesh Sampath"
+  venue: "iScience"
+  year: 2025
+  type: "journal"
+  selected: true
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Lactobacillus rhamnosus modulates murine neonatal gut microbiota and inflammation caused by pathogenic Escherichia coli"
+  authors: "Hao Xuan, Shahid Umar, Cuncong Zhong, Wenhao Yu, Imran Ahmed, Jessica L. Wheatley, Venkatesh Sampath, Sabrina Chavez-Bueno"
+  venue: "BMC Microbiology"
+  year: 2024
+  type: "journal"
+  selected: true
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "SNAIL: Software NAmed entity Identification from Literature"
+  authors: "Hao Xuan, Rithvij Pasupuleti, Jun Zhang, Zijun Yao, Cuncong Zhong"
+  venue: "BMC Bioinformatics (Under Review)"
+  year: 2025
+  type: "journal"
+  selected: true
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Gut metagenomic K-mer signature outperforms Akkermansia muciniphila and taxonomy for predicting immunotherapy response in non-small cell lung cancer"
+  authors: "Hao Xuan, Ben Liu, Cuncong Zhong, Jun Zhang"
+  venue: "Cell Reports (Under Review)"
+  year: 2025
+  type: "journal"
+  selected: false
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Aging induces changes in cancer formation and microbial content in a murine model of bladder cancer"
+  authors: "Woolbright, B. L., Xuan, H., Ahmed, I., Rajendran, G., Abbott, E., Dennis, K., Taylor III, J. A."
+  venue: "GeroScience"
+  year: 2024
+  type: "journal"
+  selected: false
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Innovative Family-Based Genetically Informed Series of Analyses of Whole-Exome Data Supports Likely Inheritance for Grammar in Children with Specific Language Impairment"
+  authors: "Andres, E. M., Earnest, K. K., Xuan, H., Zhong, C., Rice, M. L., Raza, M. H."
+  venue: "Children"
+  year: 2023
+  type: "journal"
+  selected: false
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
+
+- title: "Dietary water intake correlates with therapeutic outcomes in advanced NSCLC treated with immune checkpoint inhibitors"
+  authors: "Zhang, J., H. Xuan, T. McCorkle, Q. Dai, D. Sullivan, K. Lee, M. Phadnis, C. Zhong, C. H. Huang"
+  venue: "Immuno-Oncology and Technology"
+  year: 2025
+  type: "journal"
+  selected: false
+  doi: ""
+  pdf: ""
+  code: ""
+  abstract: ""
