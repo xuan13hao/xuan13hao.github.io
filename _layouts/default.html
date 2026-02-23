@@ -13,9 +13,15 @@
 <body>
   {% include header.html %}
   
-  <main id="main-content">
-    {{ content }}
-  </main>
+  <div class="page-wrapper">
+    {% if page.layout == 'home' %}
+      {% include sidebar.html %}
+    {% endif %}
+    
+    <main id="main-content" class="{% if page.layout == 'home' %}with-sidebar{% endif %}">
+      {{ content }}
+    </main>
+  </div>
   
   {% include footer.html %}
 </body>

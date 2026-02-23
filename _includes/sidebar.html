@@ -1,0 +1,65 @@
+<aside class="sidebar">
+  <div class="sidebar-content">
+    <div class="avatar-container">
+      {% if site.data.profile.avatar %}
+      <img src="{{ site.data.profile.avatar | relative_url }}" alt="{{ site.data.profile.name }}" class="avatar">
+      {% else %}
+      <div class="avatar avatar-placeholder">
+        <span>{{ site.data.profile.name | slice: 0, 1 }}</span>
+      </div>
+      {% endif %}
+    </div>
+    
+    <h1 class="sidebar-name">{{ site.data.profile.name }}</h1>
+    
+    {% if site.data.profile.greeting %}
+    <p class="sidebar-greeting">{{ site.data.profile.greeting }}</p>
+    {% endif %}
+    
+    <p class="sidebar-title">{{ site.data.profile.title }}</p>
+    
+    <div class="sidebar-links">
+      {% if site.data.profile.location %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">📍</span>
+        <span>{{ site.data.profile.location }}</span>
+      </div>
+      {% endif %}
+      
+      {% if site.data.profile.affiliation %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">🏛️</span>
+        <span>{{ site.data.profile.affiliation }}</span>
+      </div>
+      {% endif %}
+      
+      {% if site.data.profile.email %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">✉️</span>
+        <a href="mailto:{{ site.data.profile.email }}">Email</a>
+      </div>
+      {% endif %}
+      
+      {% if site.data.profile.scholar %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">🎓</span>
+        <a href="{{ site.data.profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      </div>
+      {% endif %}
+      
+      {% if site.data.profile.github %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">🐙</span>
+        <a href="{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      {% endif %}
+      
+      {% if site.data.profile.twitter %}
+      <div class="sidebar-link-item">
+        <span class="sidebar-icon">𝕏</span>
+        <a href="{{ site.data.profile.twitter }}" target="_blank" rel="noopener noreferrer">X (formerly Twitter)</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</aside>

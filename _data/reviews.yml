@@ -1,0 +1,34 @@
+- name: "npj Biofilms and Microbiomes"
+  publisher: "Nature"
+  years: [2025]
+  type: "journal"
+
+- name: "Scientific Reports"
+  publisher: "Nature"
+  years: [2024, 2025]
+  type: "journal"
+
+- name: "Bratislava Medical Journal"
+  publisher: ""
+  years: [2025]
+  type: "journal"
+
+- name: "International Conference on Bioinformatics and Biomedicine (BIBM)"
+  publisher: "IEEE"
+  years: [2021, 2022, 2023, 2024, 2025]
+  type: "conference"
+
+- name: "BIOKDD"
+  publisher: "ACM"
+  years: [2024, 2025]
+  type: "conference"
+
+- name: "International Conference on Computational Advances in Bio and Medical Sciences"
+  publisher: ""
+  years: [2023]
+  type: "conference"
+
+- name: "Bioinformatics, Computational Biology, and Health Informatics"
+  publisher: "ACM"
+  years: [2022]
+  type: "conference"

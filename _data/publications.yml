@@ -4,10 +4,12 @@
   year: 2026
   type: "preprint"
   selected: true
+  note: ""
   doi: "https://doi.org/10.64898/2026.01.28.702355"
-  pdf: ""
-  code: ""
-  abstract: ""
+  # pdf: ""
+  # code: ""
+  # arxiv: "https://doi.org/10.64898/2026.01.28.702355"
+  # abstract: ""
 
 - title: "Neonatal gut microbiota succession in mice mapped by maturation, site, injury, and single immunoglobulin interleukin-1 related receptor genotype"
   authors: "Hao Xuan, Shahid Umar, Wenhao Yu, Imran Ahmed, Cuncong Zhong, Michael Morowitz, Venkatesh Sampath"
@@ -15,10 +17,12 @@
   year: 2025
   type: "journal"
   selected: true
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  doi: "10.1016/j.isci.2025.112243"
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""
 
 - title: "Lactobacillus rhamnosus modulates murine neonatal gut microbiota and inflammation caused by pathogenic Escherichia coli"
   authors: "Hao Xuan, Shahid Umar, Cuncong Zhong, Wenhao Yu, Imran Ahmed, Jessica L. Wheatley, Venkatesh Sampath, Sabrina Chavez-Bueno"
@@ -26,32 +30,38 @@
   year: 2024
   type: "journal"
   selected: true
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  doi: "10.1186/s12866-024-03598-6"
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""
 
 - title: "SNAIL: Software NAmed entity Identification from Literature"
   authors: "Hao Xuan, Rithvij Pasupuleti, Jun Zhang, Zijun Yao, Cuncong Zhong"
-  venue: "BMC Bioinformatics (Under Review)"
-  year: 2025
-  type: "journal"
-  selected: true
-  doi: ""
-  pdf: ""
-  code: ""
+  venue: "BMC Bioinformatics (Revising)"
+  year: 2026
+  # type: "journal"
+  # selected: true
+  # note: ""
+  # doi: ""
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
   abstract: ""
 
 - title: "Gut metagenomic K-mer signature outperforms Akkermansia muciniphila and taxonomy for predicting immunotherapy response in non-small cell lung cancer"
   authors: "Hao Xuan, Ben Liu, Cuncong Zhong, Jun Zhang"
-  venue: "Cell Reports (Under Review)"
-  year: 2025
-  type: "journal"
+  venue: "Cell Reports (Revising)"
+  year: 2026
+  # type: "journal"
   selected: false
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  # doi: ""
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""
 
 - title: "Aging induces changes in cancer formation and microbial content in a murine model of bladder cancer"
   authors: "Woolbright, B. L., Xuan, H., Ahmed, I., Rajendran, G., Abbott, E., Dennis, K., Taylor III, J. A."
@@ -59,10 +69,12 @@
   year: 2024
   type: "journal"
   selected: false
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  doi: "10.1007/s11357-024-01064-9"
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""
 
 - title: "Innovative Family-Based Genetically Informed Series of Analyses of Whole-Exome Data Supports Likely Inheritance for Grammar in Children with Specific Language Impairment"
   authors: "Andres, E. M., Earnest, K. K., Xuan, H., Zhong, C., Rice, M. L., Raza, M. H."
@@ -70,10 +82,12 @@
   year: 2023
   type: "journal"
   selected: false
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  doi: "10.3390/children10071119"
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""
 
 - title: "Dietary water intake correlates with therapeutic outcomes in advanced NSCLC treated with immune checkpoint inhibitors"
   authors: "Zhang, J., H. Xuan, T. McCorkle, Q. Dai, D. Sullivan, K. Lee, M. Phadnis, C. Zhong, C. H. Huang"
@@ -81,7 +95,9 @@
   year: 2025
   type: "journal"
   selected: false
-  doi: ""
-  pdf: ""
-  code: ""
-  abstract: ""
+  # note: ""
+  doi: "https://www.esmoiotech.org/article/S2590-0188(25)00082-6/fulltext"
+  # pdf: ""
+  # code: ""
+  # arxiv: ""
+  # abstract: ""

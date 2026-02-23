@@ -1,19 +1,37 @@
 name: "Hao Xuan"
-title: "AI Researcher"
+# avatar: "/assets/images/avatar.jpg"
+greeting: "👋 Hi there~Thanks for visiting my website!"
+title: "I'm a Doctoral Candidate at University of Kansas"
 affiliation: "University of Kansas"
 department: "Electrical Engineering and Computer Science"
 location: "Lawrence, KS"
 email: "xuan13hao@gmail.com"
 phone: "+1 (785)-979-4578"
 github: "https://github.com/xuan13hao"
-scholar: ""
-orcid: ""
-twitter: ""
-linkedin: ""
-cv_pdf: "/assets/cv.pdf"
+# scholar: ""
+# orcid: ""
+# twitter: ""
+# linkedin: ""
+# cv_pdf: "/assets/cv.pdf"
 
 bio: |
-  AI Researcher with 5+ years of experience developing scalable machine learning frameworks for modeling complex scientific data in biomedical and clinical domains. Research focuses on representation learning from high-dimensional biological sequences and literature through algorithmic approaches including large language models, transformer-based architectures, and multi-agent reasoning systems.
+  AI Researcher with 5+ years of experience developing scalable machine learning frameworks for modeling complex scientific data in biomedical and clinical domains. Research focuses on representation learning from high-dimensional biological sequences and literature through algorithmic approaches including large language models, transformer-based architectures, and multi-agent reasoning systems. Led the design of extensible alignment frameworks and domain-specific information extraction models for large-scale scientific discovery tasks. Experienced in building generalizable AI systems that bridge machine learning, natural language processing, and computational biology to enable data-driven hypothesis generation and predictive modeling. Proficient in Python, PyTorch, and C/C++ for developing research-grade AI infrastructure.
+
+research_interests: |
+  I am dedicated to exploring how to (1) enable AI systems with knowledge and reasoning skills to solve biomedical tasks; and (2) develop scalable machine learning frameworks for biological sequence analysis.
+  
+  **1) AI for Biomedical Discovery**  
+  I explore how AI can _assist and automate_ the scientific workflow in biomedical domains.
+  * **Fine-tuned LLMs:** Adapt large language models for biomedical applications using parameter-efficient fine-tuning methods such as LoRA.
+  * **Biomedical NLP:** Build systems for named entity recognition and information extraction from scientific literature.
+  * **Multi-agent reasoning:** Develop multi-agent systems for evidence-based drug discovery and scientific inquiry.
+  * **Knowledge integration:** Combine parametric and retrieved knowledge for biomedical question answering and hypothesis generation.
+
+  **2) Biological Sequence Analysis**  
+  I aim to build _extensible frameworks_ for biological sequence alignment and analysis across scales.
+  * **Multi-scale alignment:** Develop general algorithmic frameworks for sequence alignment.
+  * **K-mer methods:** Explore k-mer signature-based approaches for early cancer screening, microbiome analysis and biomarker discovery.
+  * **Omics pipelines:** Create industry-level, scalable pipelines for high-throughput omics data analysis and integrative modeling.
 
 interests:
   - "Biological sequence alignment"
@@ -34,3 +52,21 @@ education:
   - degree: "Bachelor of Computer Science and Technology"
     institution: "Yantai University"
     year: "June 2014"
+
+teaching:
+  - course: "EECS 660 (Fundamental of Computer Algorithms)"
+    role: "Graduate Teaching Assistant"
+    period: "2022-Present"
+    description: ""
+  - course: "EECS 630 (Advanced Data Structures and Algorithms)"
+    role: "Graduate Teaching Assistant"
+    period: "2022-Present"
+    description: ""
+  - course: "EECS 168 (Programming)"
+    role: "Graduate Teaching Assistant"
+    period: "2022-Present"
+    description: ""
+  - course: "EECS 560 (Data Structures)"
+    role: "Graduate Teaching Assistant"
+    period: "2022-Present"
+    description: ""

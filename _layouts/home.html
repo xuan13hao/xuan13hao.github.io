@@ -3,67 +3,19 @@ layout: default
 ---
 
 <div class="home-container">
+
   <section class="about-section">
-    <div class="about-content">
-      <h1 class="name">{{ site.data.profile.name }}</h1>
-      <p class="title">{{ site.data.profile.title }}</p>
-      <p class="affiliation">{{ site.data.profile.affiliation }}</p>
-      <p class="location">{{ site.data.profile.location }}</p>
-      
-      <div class="contact-links">
-        {% if site.data.profile.email %}
-        <a href="mailto:{{ site.data.profile.email }}" aria-label="Email">
-          <span class="icon">✉</span> Email
-        </a>
-        {% endif %}
-        {% if site.data.profile.github %}
-        <a href="{{ site.data.profile.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <span class="icon">📦</span> GitHub
-        </a>
-        {% endif %}
-        {% if site.data.profile.scholar %}
-        <a href="{{ site.data.profile.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-          <span class="icon">🎓</span> Scholar
-        </a>
-        {% endif %}
-        {% if site.data.profile.cv_pdf %}
-        <a href="{{ site.data.profile.cv_pdf | relative_url }}" aria-label="CV PDF">
-          <span class="icon">📄</span> CV
-        </a>
-        {% endif %}
-      </div>
-      
-      <div class="bio">
-        {{ site.data.profile.bio | markdownify }}
-      </div>
-      
-      <div class="interests">
-        <h2>Research Interests</h2>
-        <ul class="interest-list">
-          {% for interest in site.data.profile.interests %}
-          <li>{{ interest }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+    <h2>About Me</h2>
+    <div class="bio">
+      {{ site.data.profile.bio | markdownify }}
     </div>
   </section>
 
-  {% if site.data.news.size > 0 %}
-  <section class="news-section">
-    <h2>News</h2>
-    <div class="news-list">
-      {% for item in site.data.news limit: 5 %}
-      <div class="news-item">
-        <span class="news-date">{{ item.date | date: "%B %Y" }}</span>
-        <span class="news-text">
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>
-          {% else %}
-          {{ item.text }}
-          {% endif %}
-        </span>
-      </div>
-      {% endfor %}
+  {% if site.data.profile.research_interests %}
+  <section class="research-interests-section">
+    <h2>Detailed Research Interests</h2>
+    <div class="research-interests">
+      {{ site.data.profile.research_interests | markdownify }}
     </div>
   </section>
   {% endif %}
@@ -71,66 +23,34 @@ layout: default
   {% assign selected_pubs = site.data.publications | where: "selected", true %}
   {% if selected_pubs.size > 0 %}
   <section class="publications-section">
-    <h2>Selected Publications</h2>
-    <div class="publications-list">
-      {% for pub in selected_pubs limit: 5 %}
-      <div class="publication-card">
-        <h3 class="pub-title">{{ pub.title }}</h3>
-        <p class="pub-authors">{{ pub.authors }}</p>
-        <p class="pub-venue">
-          <em>{{ pub.venue }}</em>
-          {% if pub.year %}({{ pub.year }}){% endif %}
-          {% if pub.type %}<span class="pub-type">{{ pub.type }}</span>{% endif %}
-        </p>
+    <h2>Selected publications</h2>
+    <ol class="publications-list numbered">
+      {% for pub in selected_pubs %}
+      <li class="publication-item">
+        <strong>{{ pub.title }}</strong><br>
+        {% assign author_text = pub.authors %}
+        {% assign author_text = author_text | replace: "Hao Xuan", "**Hao Xuan**" %}
+        {{ author_text | markdownify | remove: "<p>" | remove: "</p>" }}<br>
+        <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.{% if pub.note %} <strong>{{ pub.note }}</strong>{% endif %}
         <div class="pub-links">
           {% if pub.doi %}
-          <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>
+          <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">[DOI]</a>
           {% endif %}
           {% if pub.pdf %}
-          <a href="{{ pub.pdf | relative_url }}">PDF</a>
+          <a href="{{ pub.pdf | relative_url }}">[PDF]</a>
           {% endif %}
           {% if pub.code %}
-          <a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">Code</a>
+          <a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">[Code]</a>
+          {% endif %}
+          {% if pub.arxiv %}
+          <a href="{{ pub.arxiv }}" target="_blank" rel="noopener noreferrer">[arXiv]</a>
           {% endif %}
         </div>
-      </div>
+      </li>
       {% endfor %}
-    </div>
-    <a href="{{ '/publications' | relative_url }}" class="btn">View All Publications</a>
+    </ol>
+    <p class="publication-note"><em>* Equal contribution</em></p>
   </section>
   {% endif %}
 
-  {% assign featured_projects = site.data.projects | where: "featured", true %}
-  {% if featured_projects.size > 0 %}
-  <section class="projects-section">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      {% for project in featured_projects %}
-      <div class="project-card">
-        <h3 class="project-title">{{ project.title }}</h3>
-        <p class="project-description">{{ project.description }}</p>
-        {% if project.highlights %}
-        <ul class="project-highlights">
-          {% for highlight in project.highlights %}
-          <li>{{ highlight }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        <div class="project-links">
-          {% if project.links.paper %}
-          <a href="{{ project.links.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>
-          {% endif %}
-          {% if project.links.code %}
-          <a href="{{ project.links.code }}" target="_blank" rel="noopener noreferrer">Code</a>
-          {% endif %}
-          {% if project.links.demo %}
-          <a href="{{ project.links.demo }}" target="_blank" rel="noopener noreferrer">Demo</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <a href="{{ '/projects' | relative_url }}" class="btn">View All Projects</a>
-  </section>
-  {% endif %}
 </div>

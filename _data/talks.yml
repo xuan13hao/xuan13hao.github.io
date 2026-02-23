@@ -1,0 +1,17 @@
+patents:
+  - title: "SNAIL: Software Named Entity Identification from Literature"
+    status: "Patent Pending"
+  - title: "VAT: A general and extensible algorithmic framework to biological sequence alignment across scales and applications"
+    status: "Patent Pending"
+
+working_papers:
+  - authors: "Hao Xuan, Cuncong Zhong, and Jun Zhang"
+    title: "Multi-Agent Clinical Intelligence System: Leveraging Model Context Protocol for Evidence-Based Drug Discovery"
+    year: "2026+"
+  - authors: "Hao Xuan, Cuncong Zhong, and Jun Zhang"
+    title: "scVAT: An nf-core single-cell RNA-sequencing analysis pipeline supporting both short and long reads"
+    year: "2026+"
+
+works_in_progress:
+  - "Microarray- and Digital PCR-based Immunotherapy Response Prediction Kit for NSCLC Patients"
+  - "Identifying Potential Pan-Cancer Human Gut Microbiome Biomarkers for Immunotherapy Response"
