@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Selected Conference and Journal Review
+title: Academic Services
 permalink: /cv/
 ---
 

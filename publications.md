@@ -65,7 +65,7 @@ hide_title: true
   {% endfor %}
 
   <section class="review-section">
-    <h2 class="year-header">Selected Conference and Journal Review</h2>
+    <h2 class="year-header">Academic Services</h2>
     <div class="reviews-list">
       {% for review in site.data.reviews %}
       <div class="review-item">
@@ -75,10 +75,6 @@ hide_title: true
           {% else %}
           {{ review.name }}
           {% endif %}
-        </div>
-        <div class="review-years">
-          {% assign years_str = review.years | join: ", " %}
-          {{ years_str }}
         </div>
       </div>
       {% endfor %}
