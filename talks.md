@@ -30,15 +30,4 @@ hide_title: true
       {% endfor %}
     </div>
   </section>
-
-  <section class="publication-year-section">
-    <h2 class="year-header">Selected Projects in Progress</h2>
-    <div class="publications-list">
-      {% for item in site.data.talks.works_in_progress %}
-      <div class="publication-card">
-        <p class="pub-title">{{ item }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
 </div>
