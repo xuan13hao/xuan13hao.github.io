@@ -729,6 +729,22 @@ a:focus {
   font-size: 1.5rem;
 }
 
+.review-category {
+  margin-bottom: 0.5rem;
+}
+
+.review-category-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+.review-category:first-child .review-category-title {
+  margin-top: 0;
+}
+
 .publication-card {
   padding: 0.15rem 0;
   border-bottom: none;
@@ -865,11 +881,22 @@ a:focus {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .review-item {
   padding: 0.15rem 0;
+  padding-left: 1.5rem;
   border-bottom: none;
+  position: relative;
+}
+
+.review-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text-color);
 }
 
 .review-item:last-child {

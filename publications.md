@@ -66,19 +66,46 @@ hide_title: true
 
   <section class="review-section">
     <h2 class="year-header">Academic Services</h2>
-    <div class="reviews-list">
-      {% for review in site.data.reviews %}
-      <div class="review-item">
-        <div class="review-name">
-          {% if review.publisher %}
-          {{ review.name }} – {{ review.publisher }}
-          {% else %}
-          {{ review.name }}
-          {% endif %}
+    
+    {% assign journal_reviews = site.data.reviews | where: "type", "journal" %}
+    {% if journal_reviews.size > 0 %}
+    <div class="review-category">
+      <h3 class="review-category-title">Journal Reviewer</h3>
+      <div class="reviews-list">
+        {% for review in journal_reviews %}
+        <div class="review-item">
+          <div class="review-name">
+            {% if review.publisher %}
+            {{ review.name }} – {{ review.publisher }}
+            {% else %}
+            {{ review.name }}
+            {% endif %}
+          </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
+    {% endif %}
+    
+    {% assign conference_reviews = site.data.reviews | where: "type", "conference" %}
+    {% if conference_reviews.size > 0 %}
+    <div class="review-category">
+      <h3 class="review-category-title">Conference Reviewer</h3>
+      <div class="reviews-list">
+        {% for review in conference_reviews %}
+        <div class="review-item">
+          <div class="review-name">
+            {% if review.publisher %}
+            {{ review.name }} – {{ review.publisher }}
+            {% else %}
+            {{ review.name }}
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </section>
 </div>
 
