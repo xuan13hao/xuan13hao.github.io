@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /talks/
+hide_title: true
 ---
 
 <div class="publications-page">

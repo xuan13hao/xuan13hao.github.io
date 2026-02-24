@@ -3,12 +3,14 @@ layout: default
 ---
 
 <article class="page-content">
+  {% unless page.hide_title %}
   <header class="page-header">
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}
     <p class="subtitle">{{ page.subtitle }}</p>
     {% endif %}
   </header>
+  {% endunless %}
   
   <div class="page-body">
     {{ content }}

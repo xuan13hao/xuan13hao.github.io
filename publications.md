@@ -2,6 +2,7 @@
 layout: page
 title: Publications
 permalink: /publications/
+hide_title: true
 ---
 
 <div class="publications-page">

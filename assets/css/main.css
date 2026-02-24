@@ -351,14 +351,14 @@ a:focus {
 
 
 .about-section {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
 }
 
 .about-section h2,
 .research-interests-section h2,
 .publications-section h2 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   font-weight: 600;
   color: var(--text-color);
 }
@@ -370,12 +370,12 @@ a:focus {
 }
 
 .bio p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   text-align: justify;
 }
 
 .research-interests-section {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
 }
 
 .research-interests {
@@ -385,8 +385,8 @@ a:focus {
 
 .research-interests h3 {
   font-size: 1.1rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.25rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.15rem;
   font-weight: 600;
 }
 
@@ -429,12 +429,12 @@ a:focus {
 .news-section,
 
 .news-section {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
 }
 
 .news-section h2 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   font-weight: 600;
   color: var(--text-color);
 }
@@ -650,6 +650,12 @@ a:focus {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--border-color);
+}
+
+.page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .page-header .subtitle {
