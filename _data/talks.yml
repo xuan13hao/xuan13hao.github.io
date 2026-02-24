@@ -12,6 +12,6 @@ working_papers:
     title: "scVAT: An nf-core single-cell RNA-sequencing analysis pipeline supporting both short and long reads"
     year: "2026+"
 
-works_in_progress:
-  - "Microarray- and Digital PCR-based Immunotherapy Response Prediction Kit for NSCLC Patients"
-  - "Identifying Potential Pan-Cancer Human Gut Microbiome Biomarkers for Immunotherapy Response"
+# works_in_progress:
+#   - "Microarray- and Digital PCR-based Immunotherapy Response Prediction Kit for NSCLC Patients"
+#   - "Identifying Potential Pan-Cancer Human Gut Microbiome Biomarkers for Immunotherapy Response"
