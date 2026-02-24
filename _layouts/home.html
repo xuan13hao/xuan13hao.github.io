@@ -27,11 +27,25 @@ layout: default
     <ol class="publications-list numbered">
       {% for pub in selected_pubs %}
       <li class="publication-item">
-        <strong>{{ pub.title }}</strong><br>
-        {% assign author_text = pub.authors %}
-        {% assign author_text = author_text | replace: "Hao Xuan", "**Hao Xuan**" %}
-        {{ author_text | markdownify | remove: "<p>" | remove: "</p>" }}<br>
-        <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.{% if pub.note %} <strong>{{ pub.note }}</strong>{% endif %}
+        {{ pub.title }}<br>
+        {% assign authors = pub.authors | split: ", " %}
+        {% for author in authors %}
+          {% assign author_trimmed = author | strip %}
+          {% assign should_bold = false %}
+          {% if author_trimmed == "Hao Xuan" %}
+            {% assign should_bold = true %}
+          {% elsif author_trimmed contains "Xuan, H" %}
+            {% assign should_bold = true %}
+          {% elsif author_trimmed contains "H. Xuan" %}
+            {% assign should_bold = true %}
+          {% endif %}
+          {% if should_bold %}
+            <strong>{{ author_trimmed }}</strong>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            {{ author_trimmed }}{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}<br>
+        <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}.{% if pub.note %} {{ pub.note }}{% endif %}
         <div class="pub-links">
           {% if pub.doi %}
           <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">[DOI]</a>
@@ -50,6 +64,20 @@ layout: default
       {% endfor %}
     </ol>
     <p class="publication-note"><em>* Equal contribution</em></p>
+  </section>
+  {% endif %}
+
+  {% if site.data.news.size > 0 %}
+  <section class="news-section">
+    <h2>News</h2>
+    <div class="news-list">
+      {% for item in site.data.news %}
+      <div class="news-item">
+        <span class="news-date">{{ item.date | date: "%B %Y" }}</span>
+        <span class="news-text">{{ item.text }}</span>
+      </div>
+      {% endfor %}
+    </div>
   </section>
   {% endif %}
 

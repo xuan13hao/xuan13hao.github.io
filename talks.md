@@ -1,38 +1,43 @@
 ---
 layout: page
-title: Project
+title: Projects
 permalink: /talks/
 ---
 
-<div class="talks-page">
-  <section class="talks-section">
-    <h2>Patents</h2>
-    <ul class="talks-list">
+<div class="publications-page">
+  
+  <section class="publication-year-section">
+    <h2 class="year-header">Patents</h2>
+    <div class="publications-list">
       {% for item in site.data.talks.patents %}
-      <li>
-        <strong>{{ item.title }}</strong>. ({{ item.status }}).
-      </li>
+      <div class="publication-card">
+        <p class="pub-title">{{ item.title }}. ({{ item.status }}).</p>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
   </section>
 
-  <section class="talks-section">
-    <h2>Working Papers</h2>
-    <ul class="talks-list">
+  <section class="publication-year-section">
+    <h2 class="year-header">Working Projects</h2>
+    <div class="publications-list">
       {% for item in site.data.talks.working_papers %}
-      <li>
-        {{ item.authors }}. “<strong>{{ item.title }}</strong>”. ({{ item.year }}).
-      </li>
+      <div class="publication-card">
+        <p class="pub-title">{{ item.title }}</p>
+        <p class="pub-authors">{{ item.authors }}</p>
+        <p class="pub-venue"><em>({{ item.year }})</em></p>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
   </section>
 
-  <section class="talks-section">
-    <h2>Selected Works in Progress</h2>
-    <ul class="talks-list">
+  <section class="publication-year-section">
+    <h2 class="year-header">Selected Projects in Progress</h2>
+    <div class="publications-list">
       {% for item in site.data.talks.works_in_progress %}
-      <li>{{ item }}</li>
+      <div class="publication-card">
+        <p class="pub-title">{{ item }}</p>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
   </section>
 </div>

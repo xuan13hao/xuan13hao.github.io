@@ -5,6 +5,7 @@ permalink: /publications/
 ---
 
 <div class="publications-page">
+<h2 class="publications-page">Papers</h2>
   <div class="filter-controls">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="selected">Selected</button>
@@ -20,8 +21,26 @@ permalink: /publications/
       {% for pub in sorted_pubs %}
         {% if pub.year == year %}
         <div class="publication-card" data-selected="{{ pub.selected }}">
-          <h3 class="pub-title">{{ pub.title }}</h3>
-          <p class="pub-authors">{{ pub.authors }}</p>
+          <p class="pub-title">{{ pub.title }}</p>
+          <p class="pub-authors">
+            {% assign authors = pub.authors | split: ", " %}
+            {% for author in authors %}
+              {% assign author_trimmed = author | strip %}
+              {% assign should_bold = false %}
+              {% if author_trimmed == "Hao Xuan" %}
+                {% assign should_bold = true %}
+              {% elsif author_trimmed contains "Xuan, H" %}
+                {% assign should_bold = true %}
+              {% elsif author_trimmed contains "H. Xuan" %}
+                {% assign should_bold = true %}
+              {% endif %}
+              {% if should_bold %}
+                <strong>{{ author_trimmed }}</strong>{% unless forloop.last %}, {% endunless %}
+              {% else %}
+                {{ author_trimmed }}{% unless forloop.last %}, {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </p>
           <p class="pub-venue">
             <em>{{ pub.venue }}</em>
             {% if pub.type %}<span class="pub-type">{{ pub.type }}</span>{% endif %}
@@ -43,6 +62,27 @@ permalink: /publications/
     </div>
   </section>
   {% endfor %}
+
+  <section class="review-section">
+    <h2 class="year-header">Selected Conference and Journal Review</h2>
+    <div class="reviews-list">
+      {% for review in site.data.reviews %}
+      <div class="review-item">
+        <div class="review-name">
+          {% if review.publisher %}
+          {{ review.name }} – {{ review.publisher }}
+          {% else %}
+          {{ review.name }}
+          {% endif %}
+        </div>
+        <div class="review-years">
+          {% assign years_str = review.years | join: ", " %}
+          {{ years_str }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 </div>
 
 <script>

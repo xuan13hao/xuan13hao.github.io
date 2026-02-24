@@ -10,9 +10,9 @@ permalink: /cv/
     <div class="review-item">
       <div class="review-name">
         {% if review.publisher %}
-        <strong>{{ review.name }}</strong> – {{ review.publisher }}
+        {{ review.name }} – {{ review.publisher }}
         {% else %}
-        <strong>{{ review.name }}</strong>
+        {{ review.name }}
         {% endif %}
       </div>
       <div class="review-years">
