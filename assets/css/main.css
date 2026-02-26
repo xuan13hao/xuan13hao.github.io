@@ -356,6 +356,7 @@ a:focus {
 
 .about-section h2,
 .research-interests-section h2,
+.research-trajectory-section h2,
 .publications-section h2 {
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
@@ -374,16 +375,19 @@ a:focus {
   text-align: justify;
 }
 
-.research-interests-section {
+.research-interests-section,
+.research-trajectory-section {
   margin-bottom: 0.35rem;
 }
 
-.research-interests {
+.research-interests,
+.research-trajectory {
   line-height: 1.4;
   text-align: justify;
 }
 
-.research-interests h3 {
+.research-interests h3,
+.research-trajectory h3 {
   font-size: 1.1rem;
   margin-top: 0.35rem;
   margin-bottom: 0.15rem;

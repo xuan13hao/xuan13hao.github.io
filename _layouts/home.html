@@ -20,6 +20,15 @@ layout: default
   </section>
   {% endif %}
 
+  {% if site.data.profile.research_trajectory %}
+  <section class="research-trajectory-section">
+    <h2>Research Trajectory</h2>
+    <div class="research-trajectory">
+      {{ site.data.profile.research_trajectory | markdownify }}
+    </div>
+  </section>
+  {% endif %}
+
   {% assign selected_pubs = site.data.publications | where: "selected", true %}
   {% if selected_pubs.size > 0 %}
   <section class="publications-section">

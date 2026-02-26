@@ -33,6 +33,11 @@ research_interests: |
   * Multi-scale alignment: Develop general algorithmic frameworks for sequence alignment.
   * K-mer methods: Explore k-mer signature-based approaches for early cancer screening, microbiome analysis and biomarker discovery.
   * Omics pipelines: Create industry-level, scalable pipelines for high-throughput omics data analysis and integrative modeling.
+research_trajectory: |
+  My research develops AI-driven computational systems that translate biological sequencing data into clinically actionable therapeutic insights through an end-to-end precision medicine pipeline:
+  Sequencing → Representation Learning → Clinical Inference → Therapeutic Reasoning → In-Silico Screening
+  I build scalable frameworks to extract disease-associated molecular patterns from large-scale microbiome and genomic sequencing data, learn patient-specific biological representations, integrate molecular evidence with biomedical knowledge for clinical outcome prediction, and support treatment hypothesis generation through AI-driven reasoning. 
+  My long-term goal is to enable integrative AI systems for early cancer detection and personalized treatment in precision oncology.
 
 interests:
   - "Biological sequence alignment"
